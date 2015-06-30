@@ -1,9 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>App</title>
-</head>
-<body>
-hello {{ name|e }}
-</body>
-</html>
+{% extends "layout/default.twig" %}
+
+{% block title %}hello{% endblock %}
+
+{% block content %}
+    hello {{ name|e }}
+{% endblock %}
