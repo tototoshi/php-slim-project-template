@@ -1,1 +1,9 @@
 vendor/
+
+# this is a project template so ignore composer.lock
+composer.lock
+
+node_modules/
+
+htdocs/js/
+htdocs/css/
