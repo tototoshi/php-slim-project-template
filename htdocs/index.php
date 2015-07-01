@@ -1,6 +1,8 @@
 <?php
 require_once '../vendor/autoload.php';
 
+use Example\Message;
+
 set_error_handler(function ($errno, $errstr, $errfile, $errline ) {
     throw new ErrorException($errstr, 0, $errno, $errfile, $errline);
 });
@@ -12,7 +14,8 @@ $app = new \Slim\Slim(array(
 ));
 
 $app->get('/', function () use ($app) {
-    $app->render('index.twig');
+    $message = new Message();
+    $app->render('index.twig', ['message' => $message->hello()]);
 });
 
 $app->get('/hello/:name', function ($name) use ($app) {

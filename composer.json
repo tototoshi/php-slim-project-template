@@ -3,5 +3,10 @@
       "slim/slim": "2.6.0",
       "slim/views": "0.1.3",
       "twig/twig": "1.18.0"
+    },
+    "autoload": {
+      "psr-4": {
+        "Example\\": "src/"
+      }
     }
 }
