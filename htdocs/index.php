@@ -10,6 +10,9 @@ set_error_handler(function ($errno, $errstr, $errfile, $errline ) {
 $dotenv = new Dotenv\Dotenv(dirname(__DIR__));
 $dotenv->load();
 
+$dsn = getenv("DB_DSN");
+$pdo = new PDO($dsn);
+
 $view = new \Slim\Views\Twig();
 $app = new \Slim\Slim(array(
     'view' => $view,
