@@ -2,6 +2,12 @@
 
 Template for small Slim Framework projects
 
+## Dependencies
+
+ - Slim
+ - Twig
+ - phpdotenv
+
 ## Setup and running
 
 ```
