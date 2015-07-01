@@ -1,5 +1,8 @@
 vendor/
 
+# phpdotenv
+.env
+
 # this is a project template so ignore composer.lock
 composer.lock
 

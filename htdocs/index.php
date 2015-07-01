@@ -7,6 +7,9 @@ set_error_handler(function ($errno, $errstr, $errfile, $errline ) {
     throw new ErrorException($errstr, 0, $errno, $errfile, $errline);
 });
 
+$dotenv = new Dotenv\Dotenv(dirname(__DIR__));
+$dotenv->load();
+
 $view = new \Slim\Views\Twig();
 $app = new \Slim\Slim(array(
     'view' => $view,
