@@ -20,6 +20,9 @@
     "webpack-stream": "^2.0.0"
   },
   "dependencies": {
-    "jquery": "^2.1.4"
+    "bootstrap": "^3.3.5",
+    "file-loader": "^0.8.4",
+    "jquery": "^2.1.4",
+    "url-loader": "^0.5.6"
   }
 }
