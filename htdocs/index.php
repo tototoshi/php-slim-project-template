@@ -24,8 +24,4 @@ $app->get('/', function () use ($app) {
     $app->render('index.twig', ['message' => $message->hello()]);
 });
 
-$app->get('/hello/:name', function ($name) use ($app) {
-    $app->render('hello.twig', ['name' => $name]);
-});
-
 $app->run();
