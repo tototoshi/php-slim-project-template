@@ -6,6 +6,7 @@ Template for small Slim Framework projects
 
  - Slim
  - Twig
+ - Twitter Bootstrap
  - phpdotenv
 
 ## Setup and running
